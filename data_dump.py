@@ -1,6 +1,9 @@
 import pymongo
 import pandas as pd
 import json
+from dotenv import load_dotenv
+print(f"Loading environment variable from .env file")
+load_dotenv()
 # Provide the mongodb localhost url to connect python to mongodb.
 client = pymongo.MongoClient("mongodb+srv://kishore:mongodb@cluster0.4xwrt.mongodb.net/?retryWrites=true&w=majority")
 
